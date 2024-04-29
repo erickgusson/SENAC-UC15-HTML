@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+
+    background: linear-gradient(tomato,
+            rgb(255, 194, 80));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 500px;
+    height: auto;
+
+    padding: 5px;
+
+    border: 2px solid black;
+    border-radius: 5px;
+
+    background-color: floralwhite;
+}
+
+.box form fieldset {
+    padding: 10px 10px;
+ 
+    border-color: black;
+    border-radius: 10px;
+}
+
+.box form legend {
+    margin: 0 4px;
+    padding: 0 4px;
+}
+
+.box form fieldset input:not(input[type="radio"]) {
+    margin-bottom: 5px;
+    padding: 2px 4px;
+
+    width: 50%;
+ 
+    border: 1px solid black;
+}
+
+input[type="submit"] {
+    padding: 8px 12px;
+
+    background-color: rgb(255, 74, 42);
+    color: white;
+   
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    float: right;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(255, 109, 84);
+ 
+    border-color: black;
+
+    cursor: pointer;
+}
