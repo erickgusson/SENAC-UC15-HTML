@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+/* # -> Referencia ao ID */
+#banner{
+    /* height: 100%; */
+    /* height: 616px;
+
+    background-image: url(../img/banner_1.png);
+    background-repeat: no-repeat;
+    background-position: center; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#produtos {
+    /* background-color: tomato; */
+
+    height: 100%;
+}
+
+#produtos .titulo {
+    display: flex;
+    justify-content: center;
+
+    font-family: "Inter" sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.foto-produto {
+    width: 100%;
+    height: 380px;
+    /* height: 380px; */
+    max-width: 280px;
+    height: 380px;
+
+    border-radius: 20px;
+
+    object-fit: cover;
+    object-position: top;
+}
+
+#produtos figure {
+    background-color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+#produtos figure figcaption {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 10%;
+
+    max-width: 100%;
+    height: 110px;
+}
+
+#produtos figure figcaption h4 {
+    font-size: auto;
+    font-weight: 700;
+
+    margin-bottom: 0;
+
+    text-align: start;
+}
+
+#produtos figure figcaption span.preco {
+    color: #912543;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: end;
+
+    height: 100%;
+    
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+}
+
+#produtos figure figcaption span.avaliacao {
+    color: #912543;
+    font-size: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+#produtos figure figcaption span.avaliacao i{
+    line-height: 30px;
+}
