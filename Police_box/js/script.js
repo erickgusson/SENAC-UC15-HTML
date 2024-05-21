@@ -46,3 +46,7 @@ function ProximoSlide() {
 
     ShowSlide(indexSlide);
 }
+
+setInterval(() => {
+    ProximoSlide()
+}, 5000)
