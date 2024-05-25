@@ -17,10 +17,12 @@ function BuscarPokemon(idPokemon) {
                     <p>Altura: ${response.height/10} M</p>
                 `;
                 $('#pokemon-info').html(pokemonInfo);
+                $('body').removeClass();
+                $('body').addClass(`${response.types[0].type.name}`);
             },
             error: function (xhr, status, error) {
                 console.error(status, error);
-                $('#pokemon-info').html('<p>Erro ao carregar informações do Pokémon.</p>');
+                $('#pokemon-info').html('<p>Erro ao carregar <br>informações do Pokémon.</p>');
             }
         });
     });
